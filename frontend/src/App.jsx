@@ -2,6 +2,14 @@ import { useState } from "react";
 import { LuHouse } from "react-icons/lu";
 import { IoIosNotifications } from "react-icons/io";
 import { IoMdSettings } from "react-icons/io";
+import { HiOutlineUserGroup } from "react-icons/hi";
+import { HiOutlineUserCircle } from "react-icons/hi";
+import { FaCalendarAlt } from "react-icons/fa";
+import { MdOutlineEmail } from "react-icons/md";
+import { FaTasks } from "react-icons/fa";
+import { FaChartColumn } from "react-icons/fa6";
+import { IoDocuments } from "react-icons/io5";
+import { GoProject } from "react-icons/go";
 
 function App() {
   const [theme, setTheme] = useState("");
@@ -85,6 +93,183 @@ function App() {
               {/* Textul */}
               <span className="text-inherit font-medium text-[15px]">
                 Notifications
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <HiOutlineUserGroup
+                size={22} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Clients
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <FaCalendarAlt
+                size={21} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Calendar
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <FaTasks
+                size={21} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Tasks
+              </span>
+            </button>
+
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <MdOutlineEmail
+                size={22} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Email
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <FaChartColumn
+                size={21} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Analytics
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <IoDocuments
+                size={22} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Documents
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <HiOutlineUserCircle
+                size={22} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Team
+              </span>
+            </button>
+
+            <button className = {`
+              group
+              flex items-center gap-2.5
+              w-full px-4 py-2.5
+              rounded-xl transition-all duration-300
+              hover:bg-[#e71867]/10
+              hover:text-[#e71867]
+              ${isDark ? "text-[#cdcdd3]" : "text-[#6e7174]"}`}
+            >
+            
+              {/* Iconița */}
+              <GoProject
+                size={22} 
+                className="text-inherit transition-transform duration-300 group-hover:scale-110" 
+              />
+              
+              {/* Textul */}
+              <span className="text-inherit font-medium text-[15px]">
+                Projects
               </span>
             </button>
 
