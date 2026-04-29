@@ -2,6 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Sidebar from './Sidebar';
 import LoginPage from './LoginPage';
+import ClientsPage from "./ClientsPage";
 
 function App() {
   const [theme, setTheme] = useState("");
@@ -32,12 +33,13 @@ function App() {
           }}
         />
 
-        {/* ZONA DE LUCRU (MAIN) - Aici se întâmplă magia */}
+        {/* ZONA DE LUCRU (MAIN) */}
         <main className={`flex-1 transition-all duration-300 ${
           isDark 
             ? "bg-zinc-800 text-white" 
             : "bg-[#F8F9FB] text-black"
-        }`}>
+        }`}
+        >
           
           {/* RENDER DINAMIC: Aici punem paginile în funcție de activePage */}
           <div className="p-8">
@@ -49,12 +51,7 @@ function App() {
               </div>
             )}
 
-            {activePage === 'clients' && (
-              /* Aici va veni lista de clienți */
-              <div className="animate-fade-in">
-                {/* Pagina de Clienți va „locui” aici */}
-              </div>
-            )}
+            {activePage === 'clients' && ( <ClientsPage isDark={isDark} /> )}
 
             {/* Poți adăuga oricâte pagini noi aici după același model */}
 

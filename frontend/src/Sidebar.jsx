@@ -103,7 +103,9 @@ return (
               </span>
             </button>
 
-            <button className = {`
+            <button 
+              onClick={() => setActivePage('clients')}
+              className = {`
               group
               flex items-center gap-2.5
               w-full px-4 py-2.5
